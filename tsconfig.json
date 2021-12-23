@@ -1,0 +1,41 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./build",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "target": "es6",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "module": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    /* Turning this on is equivalent to enabling all of the strict mode family options */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    ".eslintrc.js",
+    "webpack.config.js",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "test/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
