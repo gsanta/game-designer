@@ -6,7 +6,7 @@ export const spriteApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: '.' }),
   endpoints: (builder) => ({
     getSpriteByName: builder.query<Sprite, string>({
-      query: (name) => `sprite/${name}`,
+      query: (name) => `api/sprite/${name}`,
     }),
   }),
 });

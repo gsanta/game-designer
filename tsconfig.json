@@ -31,9 +31,11 @@
   "include": [
     ".eslintrc.js",
     "webpack.config.js",
+    "jest.config.js",
     "src/**/*.ts",
     "src/**/*.tsx",
     "test/**/*.ts",
+    "msw_mock_api",
   ],
   "exclude": [
     "node_modules"

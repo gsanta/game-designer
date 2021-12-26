@@ -9,7 +9,8 @@
     "start": "./node_modules/.bin/webpack-dev-server --mode=development --host 0.0.0.0",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint . && echo 'Lint complete.'"
+    "lint": "eslint . && echo 'Lint complete.'",
+    "test": "jest"
   },
   "author": "Gergely Santa",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "react-reflex": "^4.0.3"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.3",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "css-loader": "^6.5.1",
@@ -40,8 +42,10 @@
     "mini-css-extract-plugin": "^2.4.5",
     "prettier": "^2.5.1",
     "raw-loader": "^4.0.2",
+    "react-test-renderer": "^17.0.2",
     "sass": "^1.45.1",
     "sass-loader": "^12.4.0",
+    "ts-jest": "^27.1.2",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0",
