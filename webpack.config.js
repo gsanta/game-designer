@@ -61,7 +61,6 @@ module.exports = (env) => {
       filename: 'bundle.js',
       libraryTarget: 'var',
       library: 'gameDesigner',
-      publicPath: '',
     },
     externals: {
       babylonjs: 'BABYLON',
@@ -69,7 +68,7 @@ module.exports = (env) => {
     devtool: 'eval',
     context: __dirname,
     devServer: {
-      static: ['.', './test', './assets'],
+      static: ['.', './test', './assets', './public'],
       port: 3002,
     },
   };
