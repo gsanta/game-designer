@@ -6,6 +6,7 @@ import SpriteSheet from './ui/SpriteSheet';
 import { Provider } from 'react-redux';
 import store from './ui/store';
 import { SidePanel } from './ui/SidePanel';
+import RenderCanvas from './ui/RenderCanvas';
 
 const App = (): JSX.Element => {
   return (
@@ -19,7 +20,7 @@ const App = (): JSX.Element => {
         <ReflexSplitter />
 
         <ReflexElement className="right-pane">
-          <div className="pane-content">Right Pane (resizeable)</div>
+          <RenderCanvas />
         </ReflexElement>
       </ReflexContainer>
     </Provider>

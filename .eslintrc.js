@@ -105,8 +105,8 @@ module.exports = {
       {
         devDependencies: [
           '**/*.stories.tsx',
-          '**/*.spec.tsx',
-          '**/*.spec.ts',
+          '**/*.test.tsx',
+          '**/*.test.ts',
           './webpack.config.js',
           './app/javascript/utils/testcases.ts',
           './spec/typescript/*',
