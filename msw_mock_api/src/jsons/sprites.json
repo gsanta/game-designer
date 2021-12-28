@@ -1,0 +1,8 @@
+{
+  "player": {
+    "tileWidth": 60,
+    "tileHeight": 60,
+    "columns": 5,
+    "tiles": 12
+  }
+}
