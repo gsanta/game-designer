@@ -12,15 +12,16 @@ const SpriteTileElement = ({ src, tile }: SpriteTileProps) => {
   const y = indexY * height;
 
   return (
-    <div
-      style={{
-        width: `${width}px`,
-        height: `${height}px`,
-        backgroundPosition: `-${x}px -${y}px`,
-        backgroundImage: `url("${src}")`,
-        border: '1px solid blue',
-      }}
-    ></div>
+    <div className="sprites__sprite-tile">
+      <div
+        style={{
+          width: `${width}px`,
+          height: `${height}px`,
+          backgroundPosition: `-${x}px -${y}px`,
+          backgroundImage: `url("${src}")`,
+        }}
+      ></div>
+    </div>
   );
 };
 

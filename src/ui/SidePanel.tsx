@@ -14,7 +14,6 @@ export const SidePanel = () => {
 
   return (
     <div className="pane-content">
-      <img src="sprites/player.png" />
     </div>
   );
 };

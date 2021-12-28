@@ -1,8 +1,10 @@
-import React from 'react';
-import { SpriteSheet } from '../features/sprite/SpriteSheet';
-import SpriteTileElement from '../features/sprite/SpriteTileElement';
+import React, { useState } from 'react';
+import { SpriteSheet } from './SpriteSheet';
+import SpriteTileElement from './SpriteTileElement';
 
 const SpriteSheetElement = () => {
+  const [isOpen, setOpen] = useState(false);
+
   const sheet: SpriteSheet = {
     name: 'player',
     tileWidth: 64,
@@ -34,7 +36,20 @@ const SpriteSheetElement = () => {
     }
   }
 
-  return <div>{spriteTiles}</div>;
+  const spriteSheet = (
+    <div
+      className="sprites__spritesheet"
+      style={{ backgroundImage: `url("${src}")` }}
+      onClick={() => setOpen(!isOpen)}
+    ></div>
+  );
+
+  return (
+    <div className="sprites">
+      {spriteSheet}
+      {isOpen ? spriteTiles : null}
+    </div>
+  );
 };
 
 export default SpriteSheetElement;

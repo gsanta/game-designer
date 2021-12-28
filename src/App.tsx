@@ -1,8 +1,9 @@
 import React from 'react';
 import { ReflexContainer, ReflexElement, ReflexSplitter } from 'react-reflex';
 import './App.scss';
+import './features/sprite/sprite.scss';
 import 'react-reflex/styles.css';
-import SpriteSheet from './ui/SpriteSheetElement';
+import SpriteSheet from './features/sprite/SpriteSheetElement';
 import { Provider } from 'react-redux';
 import store from './ui/store';
 import { SidePanel } from './ui/SidePanel';
