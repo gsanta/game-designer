@@ -34,5 +34,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid $color-blue--3;
+  border: 1px solid $color-blue--2;
+  cursor: pointer;
+}
+
+.sprites__sprite-tile--selected {
+  border: 1px dashed $color-blue--3;
+  stroke-dasharray: 10px;
 }

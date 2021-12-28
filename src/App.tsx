@@ -1,13 +1,12 @@
 import React from 'react';
-import { ReflexContainer, ReflexElement, ReflexSplitter } from 'react-reflex';
-import './App.scss';
-import './features/sprite/sprite.scss';
-import 'react-reflex/styles.css';
-import SpriteSheet from './features/sprite/SpriteSheetElement';
 import { Provider } from 'react-redux';
-import store from './ui/store';
-import { SidePanel } from './ui/SidePanel';
+import { ReflexContainer, ReflexElement, ReflexSplitter } from 'react-reflex';
+import 'react-reflex/styles.css';
+import './app.scss';
+import './features/sprite/sprite.scss';
 import RenderCanvas from './ui/RenderCanvas';
+import { SidePanel } from './ui/SidePanel';
+import store from './ui/store';
 
 const App = (): JSX.Element => {
   return (
@@ -15,7 +14,6 @@ const App = (): JSX.Element => {
       <ReflexContainer orientation="vertical">
         <ReflexElement className="left-pane">
           <SidePanel />
-          <SpriteSheet />
         </ReflexElement>
 
         <ReflexSplitter />

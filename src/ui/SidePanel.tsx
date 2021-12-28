@@ -1,4 +1,5 @@
 import React from 'react';
+import SpriteSheetElement from '../features/sprite/SpriteSheetElement';
 import { useGetSpriteByNameQuery } from '../services/spriteApi';
 
 export const SidePanel = () => {
@@ -13,7 +14,8 @@ export const SidePanel = () => {
   console.log(data, error, isLoading);
 
   return (
-    <div className="pane-content">
+    <div className="pane__side">
+      <SpriteSheetElement />
     </div>
   );
 };

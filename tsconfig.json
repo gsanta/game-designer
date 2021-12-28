@@ -4,7 +4,11 @@
     "baseUrl": ".",
     "outDir": "./build",
     "typeRoots": [
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "@testing-library/jest-dom"
+    ],
+    "types": [
+      "node", "jest", "@testing-library/jest-dom"
     ],
     "target": "es6",
     "lib": [
