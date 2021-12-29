@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { SpriteSheet } from '../features/sprite/SpriteSheet';
 import { Sprite } from '../models/Sprite';
 
 export const spriteApi = createApi({
@@ -8,7 +9,10 @@ export const spriteApi = createApi({
     getSpriteByName: builder.query<Sprite, string>({
       query: (name) => `api/sprite/${name}`,
     }),
+    searchSprites: builder.query<SpriteSheet[], void>({
+      query: () => `api/sprite/search`,
+    }),
   }),
 });
 
-export const { useGetSpriteByNameQuery } = spriteApi;
+export const { useGetSpriteByNameQuery, useSearchSpritesQuery } = spriteApi;

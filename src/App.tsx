@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { ReflexContainer, ReflexElement, ReflexSplitter } from 'react-reflex';
 import 'react-reflex/styles.css';
 import './app.scss';
+import 'antd/dist/antd.css';
 import './features/sprite/sprite.scss';
 import RenderCanvas from './ui/RenderCanvas';
 import { SidePanel } from './ui/SidePanel';

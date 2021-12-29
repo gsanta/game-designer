@@ -5,7 +5,7 @@ import App from './App';
 if (process.env.NODE_ENV === 'development') {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { worker } = require('../msw_mock_api/src/mocks/browser');
-  worker.start({ onUnhandledRequest: 'bypass' });
+  worker.start({ onUnhandledRequest: 'warn' });
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
