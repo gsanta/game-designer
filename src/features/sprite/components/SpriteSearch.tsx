@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSearchSpritesQuery } from '../../services/spriteApi';
+import { useSearchSpritesQuery } from '../../../services/spriteApi';
 
 const SpriteSearch = () => {
   const { data, error, isLoading } = useSearchSpritesQuery();
@@ -11,7 +11,7 @@ const SpriteSearch = () => {
     result = (
       <>
         {data.map((spriteSheet) => (
-          <div>{spriteSheet.name}</div>
+          <div data-testid="spritesheet-item">{spriteSheet.name}</div>
         ))}
       </>
     );

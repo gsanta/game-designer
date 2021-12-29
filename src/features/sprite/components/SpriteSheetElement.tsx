@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SpriteSheet } from './SpriteSheet';
+import { SpriteSheet } from '../SpriteSheet';
 import SpriteTileElement from './SpriteTileElement';
 
 interface TilesProps {

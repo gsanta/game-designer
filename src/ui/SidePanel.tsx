@@ -1,5 +1,5 @@
 import React from 'react';
-import SpritePanel from '../features/sprite/SpritePanel';
+import SpritePanel from '../features/sprite/components/SpritePanel';
 // import { useGetSpriteByNameQuery } from '../services/spriteApi';
 
 export const SidePanel = () => {

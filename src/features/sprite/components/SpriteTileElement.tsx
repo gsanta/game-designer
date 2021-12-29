@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import { SpriteTile } from './SpriteTile';
+import { SpriteTile } from '../SpriteTile';
 
 interface SpriteTileProps {
   src: string;
