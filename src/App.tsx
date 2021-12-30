@@ -8,6 +8,7 @@ import './features/sprite/sprite.scss';
 import RenderCanvas from './ui/RenderCanvas';
 import { SidePanel } from './ui/SidePanel';
 import store from './ui/store';
+import Notifications from './features/notification/Notifications';
 
 const App = (): JSX.Element => {
   return (
@@ -23,6 +24,7 @@ const App = (): JSX.Element => {
           <RenderCanvas />
         </ReflexElement>
       </ReflexContainer>
+      <Notifications />
     </Provider>
   );
 };

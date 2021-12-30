@@ -15,7 +15,16 @@ export const handlers = [
 
     console.log('the sprites', sprites);
 
-    return res(ctx.json(sprites));
+    // return res(ctx.json(sprites));
+
+    return res(
+      ctx.status(500),
+      ctx.json({
+        errorMessage: `Internal server error`,
+      }),
+    );
+    // And a response body, if necessary
+
     // const url = 'sprites/player.png';
 
     // const imageBuffer = await fetch(url).then((imgRes) => imgRes.arrayBuffer());
